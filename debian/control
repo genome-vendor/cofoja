@@ -1,0 +1,15 @@
+Source: libcofoja-java
+Section: science
+Priority: optional
+Maintainer: The Genome Institute <gmt@genome.wustl.edu>
+Uploaders: Thomas Mooney <tmooney@genome.wustl.edu>
+Build-Depends: ant, default-jdk (>= 1.6), debhelper (>= 7.0.50~)
+Standards-Version: 3.9.3
+Homepage: https://code.google.com/p/cofoja/
+
+Package: libcofoja-java
+Architecture: all
+Depends: default-jre | java6-runtime, ${misc:Depends}
+Description: Contracts for Java enables you to annotate your code
+ with contracts in the form of preconditions, postconditions and
+ invariants.

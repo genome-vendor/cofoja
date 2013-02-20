@@ -1,0 +1,13 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: http://cofoja.googlecode.com/svn/trunk/
+
+Files: *
+Copyright: © Google
+License: LGPL-3
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License,
+version 3 as published by the Free Software Foundation.
+.
+On Debian GNU/Linux systems, the complete text of the GNU Lesser
+General Public License, version 3 can be found in
+`/usr/share/common-licenses/LGPL-3`.
