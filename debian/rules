@@ -2,3 +2,15 @@
 
 %:
 	dh $@
+
+PKG=libcofoja-java
+PKG_LIB_DIR=debian/${PKG}/usr/share/java/
+
+override_dh_auto_install:
+	mkdir -p ${PKG_LIB_DIR}
+	rm dist/cofoja-*-bare.jar
+	mv dist/cofoja-*.jar ${PKG_LIB_DIR}
+
+override_dh_link:
+	dh_link usr/share/java/cofoja-*.jar usr/share/java/cofoja.jar
+
