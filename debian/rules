@@ -5,6 +5,7 @@
 
 PKG=libcofoja-java
 PKG_LIB_DIR=debian/${PKG}/usr/share/java/
+VERSION=1.0-r139
 
 override_dh_auto_install:
 	mkdir -p ${PKG_LIB_DIR}
@@ -12,5 +13,5 @@ override_dh_auto_install:
 	mv dist/cofoja-*.jar ${PKG_LIB_DIR}
 
 override_dh_link:
-	dh_link usr/share/java/cofoja-*.jar usr/share/java/cofoja.jar
+	dh_link usr/share/java/cofoja-${VERSION}.jar usr/share/java/cofoja.jar
 
